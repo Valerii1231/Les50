@@ -1,0 +1,29 @@
+
+
+
+<div class="body">
+    <input
+      [value]="inputName" 
+      type="text" 
+      placeholder="Name"
+      [(ngModel)]="name"
+      (input)="onName($event)"/>
+    <textarea 
+      [value]="inputStatus" 
+      type="text" 
+      placeholder="Status" 
+      [(ngModel)]="status"
+      (input)="onStatus($event)">
+    </textarea>
+    <input
+      [value]="inputUrl" 
+      type="url"
+      placeholder="Avatar URL"
+      [(ngModel)]="url"
+      (input)="onUrl($event)" />
+    <button 
+      type="button" 
+      (click)="addNewUser(name, status, url)">
+      Add user
+    </button>
+  </div>

@@ -1,0 +1,63 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(52, 141, 165);
+    max-width: 350px;
+    margin: 0 auto 40px auto;
+    padding: 15px;
+   
+}
+
+input, textarea{
+    margin-bottom: 10px;
+    color: #000;
+    &:nth-child(2){
+        margin-bottom: 20px;
+    }
+    
+    font-size: 18px;
+    padding-left: 5px;
+    
+    
+    &::placeholder{
+        color: #000;
+        opacity: 0.5;
+    }
+}
+
+input{
+    height: 24px;
+}
+textarea{
+    height: 120px;
+    resize: none;
+}
+
+/* button{
+    font-size: 20px;
+    padding: 2px 0;
+    font-weight: 600;
+    background-color: rgb(14, 5, 70);
+    color: #fff;
+    cursor: pointer;
+} */
+
+button{
+    color: rgb(22, 22, 25);
+    background-color: #db9b56;
+    padding: 5px 5px;
+    font-size: 18px;   
+    border-radius: 8px;
+    font-weight: 800;
+    box-shadow: 1.5px 1px 2px 2px rgb(17, 16, 16);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+        &:active{
+            box-shadow: 1px 0px 0.5px 1px rgba(0,0,0,0.75);
+        }
+        &:not(:last-child){
+        margin-right: 12px;
+        }
+        width: 300px;
+        margin: 0 auto;
+    }
